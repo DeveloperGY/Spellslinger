@@ -9,9 +9,19 @@ namespace gm
 	{
 	private:
 		std::vector<gm::en::Entity> entities;
+		char* _name = NULL;
 
 	public:
 		Scene();
 		virtual ~Scene();
+
+		// Getters
+
+		// Setters
+
+		// Sets the Scene Name
+		void setName(char*);
+		// Sets the Scene Name
+		void setName(const char*);
 	};
 }
