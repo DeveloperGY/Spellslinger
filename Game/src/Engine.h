@@ -4,6 +4,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include "Game/Entities/Entity.h"
+#include "Game/Scene.h"
 
 namespace gm
 {
@@ -20,7 +21,7 @@ namespace gm
 
 		sf::Image _defaultIcon;   // Default Texture
 
-		std::vector<gm::en::Entity> entities; // Entity Vector
+		std::vector<gm::Scene> scenes; // Scene Vector
 
 	public:
 		// Creates the Engine

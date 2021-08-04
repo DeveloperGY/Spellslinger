@@ -157,11 +157,13 @@
   <ItemGroup>
     <ClCompile Include="src\Engine.cpp" />
     <ClCompile Include="src\Game\Entities\Entity.cpp" />
+    <ClCompile Include="src\Game\Scene.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Engine.h" />
     <ClInclude Include="src\Game\Entities\Entity.h" />
+    <ClInclude Include="src\Game\Scene.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\graphics\game_icon.png" />
