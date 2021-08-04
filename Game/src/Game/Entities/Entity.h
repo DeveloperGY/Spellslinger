@@ -4,6 +4,7 @@ namespace gm
 {
 	namespace en
 	{
+		// Game Entity Test
 		class Entity
 		{
 		private:
