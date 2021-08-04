@@ -30,7 +30,7 @@ int gm::Engine::initEngine()
 	sf::Image icon;
 	icon.create(16, 16, sf::Color(0, 0, 0));
 
-	try // If the icon path is invalid, load the default icon and print an error
+	try // If the icon path is invalid, load the default icon and print an error, else load the icon
 	{
 		if (!icon.loadFromFile(this->_iconPath))
 		{
