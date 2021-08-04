@@ -69,7 +69,11 @@ void gm::Engine::loop()
 			}
 		}
 
+		// Update Scene
+
 		this->_window.clear();
+
+		// Draw Scene
 
 		this->_window.display();
 	}

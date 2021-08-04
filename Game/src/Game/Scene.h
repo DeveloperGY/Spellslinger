@@ -17,6 +17,9 @@ namespace gm
 
 		// Getters
 
+		// Returns the Scene Name
+		char* getName();
+
 		// Setters
 
 		// Sets the Scene Name
