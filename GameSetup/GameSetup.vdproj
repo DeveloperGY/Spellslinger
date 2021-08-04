@@ -22,13 +22,13 @@
         "Entry"
         {
         "MsmKey" = "8:_3B1AE0D538920BFD55600F20DF89345D"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_4760125ECC00F62348B31BC08CCF2316"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -40,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_5AFFA81C0B4F9DC1D9DE09BB16489E20"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -58,13 +58,7 @@
         "Entry"
         {
         "MsmKey" = "8:_770218DE94C4F71A4AEF6F4AD06C5E76"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
-        "OwnerKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,13 +70,13 @@
         "Entry"
         {
         "MsmKey" = "8:_A64013A802BDC87E6BA66ACB5EFA76CF"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_AB484608E7574A97E97AA524CD998266"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,19 +94,19 @@
         "Entry"
         {
         "MsmKey" = "8:_D89B258F8B8DFE8DA7D1D0089736AB6A"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_E6469ED0264BDD3E24DCDE1A2AE9BD27"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_E7E683B2A25656D5BEBC732683C2A8E6"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -123,8 +117,14 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_F436AD169075443C83DAC8258A556DEE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F9C0E83010892F88462B7A3BE4BE8B17"
-        "OwnerKey" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+        "OwnerKey" = "8:_F436AD169075443C83DAC8258A556DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -652,19 +652,19 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Spellslinger"
-        "ProductCode" = "8:{044BB61A-A019-4C76-88D9-5FCF98B6F4C4}"
-        "PackageCode" = "8:{BFC585C7-04D5-48E5-8E64-EED98DA759D2}"
+        "ProductCode" = "8:{4E6885EE-54EB-4A4C-B45C-7C10B1D60F38}"
+        "PackageCode" = "8:{21FB8B06-4DBF-452D-9B57-71AE2ECD33C4}"
         "UpgradeCode" = "8:{09909CA0-11AF-4537-B7C3-C4B07A120E3D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:0.0.1"
         "Manufacturer" = "8:GYDev"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:GameSetup"
+        "Title" = "8:Spellslinger Setup"
         "Subject" = "8:"
         "ARPCONTACT" = "8:GYDev"
         "Keywords" = "8:"
@@ -773,15 +773,15 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7B17CCB18A1741209AF6AA58CB0C0B11"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4206AD7D9F714335A6408D735EC6177B"
             {
             "Name" = "8:Spellslinger"
             "Arguments" = "8:"
-            "Description" = "8:"
+            "Description" = "8:Spellslinger Executable"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_91F66B3874EE448E9614B1BC518CD19D"
+            "Target" = "8:_F436AD169075443C83DAC8258A556DEE"
             "Folder" = "8:_3451686688104A629DA68616A2618855"
             "WorkingFolder" = "8:_DCC00B48FF57414EAEFD9D71EE6EAC4B"
             "Icon" = "8:_F0F74A89B08C4B308268F5E7A89FDE91"
@@ -1186,7 +1186,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_91F66B3874EE448E9614B1BC518CD19D"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F436AD169075443C83DAC8258A556DEE"
             {
             "SourcePath" = "8:..\\Release\\Game.exe"
             "TargetName" = "8:"
