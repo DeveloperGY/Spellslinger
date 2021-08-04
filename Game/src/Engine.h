@@ -21,7 +21,8 @@ namespace gm
 
 		sf::Image _defaultIcon;   // Default Texture
 
-		std::vector<gm::Scene> scenes; // Scene Vector
+		std::vector<gm::Scene*> _scenes;  // Scene Vector
+		gm::Scene* _mainScene = nullptr; // pointer to main scene
 
 	public:
 		// Creates the Engine
@@ -41,6 +42,14 @@ namespace gm
 		// Returns a referance to the Game Window
 		sf::RenderWindow* getWin();
 
+		// Returns a referance to the Main Scene
+		gm::Scene* getMainScene();
+
 		// Setters
+		
+		// Sets the Main Scene
+		void setMainScene(char*);
+		// Sets the Main Scene
+		void setMainScene(const char*);
 	};
 }

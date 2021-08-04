@@ -75,7 +75,26 @@ void gm::Engine::loop()
 	}
 }
 
+// Getters
+
 sf::RenderWindow* gm::Engine::getWin()
 {
 	return &this->_window;
+}
+
+gm::Scene* gm::Engine::getMainScene()
+{
+	return this->_mainScene;
+}
+
+// Setters
+
+void gm::Engine::setMainScene(char* name)
+{
+	return;
+}
+
+void gm::Engine::setMainScene(const char* name)
+{
+	return;
 }
