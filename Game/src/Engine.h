@@ -32,10 +32,11 @@ namespace gm
 
 		// Initializes the Engine
 		int initEngine();
-		// Initializes the Game
-		int initGame();
 		// Runs the Game Loop
 		void loop();
+
+		// Adds Scenes to Engine Scene Vector
+		int addScene(gm::Scene*);
 
 		// Getters
 
@@ -48,8 +49,8 @@ namespace gm
 		// Setters
 		
 		// Sets the Main Scene
-		void setMainScene(char*);
+		int setMainScene(char*);
 		// Sets the Main Scene
-		void setMainScene(const char*);
+		int setMainScene(const char*);
 	};
 }

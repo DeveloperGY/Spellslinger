@@ -50,11 +50,6 @@ int gm::Engine::initEngine()
 	return 0;
 }
 
-int gm::Engine::initGame()
-{
-	return 0;
-}
-
 void gm::Engine::loop()
 {
 	while(this->_window.isOpen())
@@ -79,6 +74,29 @@ void gm::Engine::loop()
 	}
 }
 
+int gm::Engine::addScene(gm::Scene* scene)
+{
+	// If scene doesnt have a name, send error and dont add it
+	if (scene->getName() == NULL)
+	{
+		std::cout << "ERROR: Scene doesn't have a name!\n";
+		return -1;
+	}
+
+	// if scene with identical name already exists, send error and dont add scene
+	for (int i = 0; i < (int)this->_scenes.size(); i++)
+	{
+		if (this->_scenes[i]->getName() == scene->getName())
+		{
+			std::cout << "ERROR: Scene with identical scene name already exists!\n";
+			return -1;
+		}
+	}
+
+	this->_scenes.push_back(scene);
+	return 0;
+}
+
 // Getters
 
 sf::RenderWindow* gm::Engine::getWin()
@@ -93,12 +111,46 @@ gm::Scene* gm::Engine::getMainScene()
 
 // Setters
 
-void gm::Engine::setMainScene(char* name)
+int gm::Engine::setMainScene(char* name)
 {
-	return;
+	// If none of the scenes have the name, output an error, else set the main scene
+	for (int i = 0; i < (int)this->_scenes.size(); i++)
+	{
+		if (i == this->_scenes.size() - 1 && this->_scenes[i]->getName() != name)
+		{
+			std::cout << "ERROR: Cannot set main scene to \"" << name << "\"! Scene called \"" << name << "\" doesnt exist!\n";
+			return -1;
+		}
+		else if (this->_scenes[i]->getName() == name)
+		{
+			this->_mainScene = this->_scenes[i];
+		}
+		else
+		{
+			continue;
+		}
+	}
+	return 0;
 }
 
-void gm::Engine::setMainScene(const char* name)
+int gm::Engine::setMainScene(const char* name)
 {
-	return;
+	// If none of the scenes have the name, output an error, else set the main scene
+	for (int i = 0; i < (int)this->_scenes.size(); i++)
+	{
+		if (i == this->_scenes.size() - 1 && this->_scenes[i]->getName() != name)
+		{
+			std::cout << "ERROR: Cannot set main scene to \"" << name << "\"! Scene called \"" << name << "\" doesnt exist!\n";
+			return -1;
+		}
+		else if (this->_scenes[i]->getName() == name)
+		{
+			this->_mainScene = this->_scenes[i];
+		}
+		else
+		{
+			continue;
+		}
+	}
+	return 0;
 }

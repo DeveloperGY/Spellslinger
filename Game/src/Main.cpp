@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include "Game/Scene.h"
 #include <iostream>
 
 int main(void)
@@ -11,7 +12,14 @@ int main(void)
 	if (engine.initEngine())
 		return -1;
 
-	if (engine.initGame())
+	// Initialize Game
+	gm::Scene main_menu;
+	main_menu.setName("MainMenu");
+
+	if (engine.addScene(&main_menu) == -1)
+		return -1;
+
+	if (engine.setMainScene(main_menu.getName()) == -1)
 		return -1;
 
 	engine.loop();
